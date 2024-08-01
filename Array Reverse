@@ -1,0 +1,26 @@
+﻿using System;
+
+namespace Increment
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] pallets = { "B14", "A11", "B12", "A13" };
+
+            Console.WriteLine("Here are the pallets sorted:");
+            Array.Sort(pallets);
+            foreach (string pallet in pallets)
+            {
+                Console.WriteLine($"--{pallet}");
+            }
+
+            Console.WriteLine("Here are the pallets reversed:");
+            Array.Reverse(pallets);
+            foreach (string pallet in pallets)
+            {
+                Console.WriteLine($"--{pallet}");
+            }
+        }
+    }
+}
