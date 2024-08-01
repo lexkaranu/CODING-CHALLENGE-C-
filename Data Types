@@ -1,0 +1,20 @@
+﻿using System;
+
+namespace Increment
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Signed integral types:");
+            Console.WriteLine($"Minimum value of sbyte: {sbyte.MinValue}");
+            Console.WriteLine($"Maximum value of sbyte: {sbyte.MaxValue}");
+            Console.WriteLine($"Minimum value of short: {short.MinValue}");
+            Console.WriteLine($"Maximum value of short: {short.MaxValue}");
+            Console.WriteLine($"Minimum value of int: {int.MinValue}");
+            Console.WriteLine($"Maximum value of int: {int.MaxValue}");
+            Console.WriteLine($"Minimum value of long: {long.MinValue}");
+            Console.WriteLine($"Maximum value of long: {long.MaxValue}");
+        }
+    }
+}
