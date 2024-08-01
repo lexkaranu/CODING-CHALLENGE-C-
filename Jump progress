@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Jump
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Solution solution = new Solution();
+            int X = 10; // example value
+            int Y = 85; // example value
+            int D = 30; // example value
+            int result = solution.solution(X, Y, D);
+            Console.WriteLine("The minimum number of jumps is: " + result);
+        }
+
+        public class Solution
+        {
+            public int solution(int X, int Y, int D)
+            {
+                int count = (Y - X + D - 1) / D;
+                return count;
+            }
+        }
+    }
+    
+}
