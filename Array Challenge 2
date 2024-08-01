@@ -1,0 +1,29 @@
+﻿
+using System;
+
+namespace Increment
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Random random = new Random();
+            string[] orderIDs = new string[5];
+
+            for (int i = 0; i < orderIDs.Length; i++)
+            {
+                int randomLetter = random.Next(65, 69 + 1); // generates a random number between 65 and 69 (inclusive)
+                char letter = (char)randomLetter; // converts the number to a character
+                int randomNumber = random.Next(1, 1000); // generates a random number between 1 and 1000
+                string number = randomNumber.ToString("000"); // formats the number as a 3 digit string
+
+                orderIDs[i] = letter.ToString() + number; // combines the letter and number which creates the OrderID
+            }
+
+            foreach (var orderID in orderIDs)
+            {
+                Console.WriteLine(orderID);
+            }
+        }
+    }
+}
