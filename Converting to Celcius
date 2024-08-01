@@ -1,0 +1,24 @@
+﻿using System;
+
+namespace WeatherApp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int fahrenheit = 120;
+            decimal temperature = ((fahrenheit - 32) * 5m / 9);
+            
+           
+            Console.WriteLine("The current temperature in New York is " + Math.Round(temperature
+             ) + " degree celcius");
+        }
+    }
+}
+
+
+
+
+
+
+    
